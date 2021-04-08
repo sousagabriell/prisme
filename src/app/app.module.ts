@@ -6,17 +6,27 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { BarComponent } from './bar/bar.component';
 import { PlayerComponent } from './player/player.component';
+import {SidebarModule } from 'ng-sidebar';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { WhoComponent } from './who/who.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     BarComponent,
-    PlayerComponent
+    PlayerComponent,
+    HomeComponent,
+    AboutComponent,
+    WhoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SidebarModule.forRoot(),
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

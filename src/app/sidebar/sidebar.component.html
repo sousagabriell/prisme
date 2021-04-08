@@ -1,62 +1,135 @@
-<div class="cont">
-    <div class="row">
-        <div class="col-md-3 navigator">
-            <div class="d-flex justify-content-center">
-                <img src="../../assets/logo.png" alt="" class="img-fluid mt-5 mb-5" style="width: 70%;">
+<ng-sidebar-container>
+
+    <ng-sidebar [opened]="opened">
+        <button (click)="toggleSidebar()">Close</button>
+        <div class="d-flex justify-content-center">
+            <img src="../../assets/logo.png" alt="" class="img-fluid mt-5 mb-5" style="width: 70%;">
+        </div>
+
+        <ul class="list-group list-group-flush list">
+
+
+            <div class="d-flex">
+                <li class="list-group-item">
+                    <img src="../../assets/home.png" alt="" srcset="" style="width: 25px; height: 25px;">
+                    Início
+                </li>
             </div>
-            <ul class="list-group list-group-flush list">
 
 
-                <div class="d-flex">
-                    <li class="list-group-item">
-                        <img src="../../assets/home.png" alt="" srcset="" style="width: 25px; height: 25px;">
-                        Início
-                    </li>
+
+            <div class="d-flex">
+                <li class="list-group-item">
+                    <img src="../../assets/newspaper.png" alt="" srcset="" style="width: 25px; height: 25px;">
+                    Novidades
+                </li>
+            </div>
+
+
+            <div class="d-flex">
+                <li class="list-group-item">
+                    <img src="../../assets/microphone.png" alt="" srcset="" style="width: 25px; height: 25px;">
+                    Artistas
+                </li>
+            </div>
+
+            <div class="d-flex">
+                <li class="list-group-item">
+                    <img src="../../assets/handshake.png" alt="" srcset="" style="width: 25px; height: 25px;">
+                    Apoio
+                </li>
+            </div>
+
+            <div class="d-flex">
+                <li class="list-group-item">
+                    <img src="../../assets/group.png" alt="" srcset="" style="width: 25px; height: 25px;">
+                    Quem Somos
+                </li>
+            </div>
+            <div class="d-flex">
+                <li class="list-group-item">
+                    <img src="../../assets/info.png" alt="" srcset="" style="width: 25px; height: 25px;">
+                    Sobre
+                </li>
+            </div>
+            <div class="d-flex">
+                <li class="list-group-item mt-5">
+                    <img src="../../assets/playlist.png" alt="" srcset="" style="width: 25px; height: 25px;">
+                    Playlist
+                </li>
+            </div>
+        </ul>
+
+
+    </ng-sidebar>
+    <div ng-sidebar-content >
+    <button (click)="toggleSidebar()">
+        open
+    </button>
+
+
+    <div class="cont">
+        <div class="row">
+            <div class="col-md-3 navigator">
+                <div class="d-flex justify-content-center">
+                    <img src="../../assets/logo.png" alt="" class="img-fluid mt-4" style="width: 70%;">
                 </div>
-
-
-
-                <div class="d-flex">
-                    <li class="list-group-item">
-                        <img src="../../assets/newspaper.png" alt="" srcset="" style="width: 25px; height: 25px;">
-                        Novidades
-                    </li>
-                </div>
-
-
-                <div class="d-flex">
-                    <li class="list-group-item">
-                        <img src="../../assets/microphone.png" alt="" srcset="" style="width: 25px; height: 25px;">
-                        Artistas
-                    </li>
-                </div>
-
-                <div class="d-flex">
-                    <li class="list-group-item">
-                        <img src="../../assets/handshake.png" alt="" srcset="" style="width: 25px; height: 25px;">
-                        Apoio
-                    </li>
-                </div>
-
-                <div class="d-flex">
-                    <li class="list-group-item">
-                        <img src="../../assets/group.png" alt="" srcset="" style="width: 25px; height: 25px;">
-                        Quem Somos
-                    </li>
-                </div>
-                <div class="d-flex">
-                    <li class="list-group-item">
-                        <img src="../../assets/info.png" alt="" srcset="" style="width: 25px; height: 25px;">
-                        Sobre
-                    </li>
-                </div>
-                <div class="d-flex">
-                    <li class="list-group-item mt-5">
-                        <img src="../../assets/playlist.png" alt="" srcset="" style="width: 25px; height: 25px;">
-                        Playlist
-                    </li>
-                </div>
-            </ul>
+                <ul class="list-group list-group-flush list mt-4">
+    
+    
+                    <div class="d-flex">
+                        <li class="list-group-item">
+                            <img src="../../assets/home.png" alt="" srcset="" style="width: 25px; height: 25px;">
+                            Início
+                        </li>
+                    </div>
+    
+    
+    
+                    <div class="d-flex">
+                        <li class="list-group-item">
+                            <img src="../../assets/newspaper.png" alt="" srcset="" style="width: 25px; height: 25px;">
+                            Novidades
+                        </li>
+                    </div>
+    
+    
+                    <div class="d-flex">
+                        <li class="list-group-item">
+                            <img src="../../assets/microphone.png" alt="" srcset="" style="width: 25px; height: 25px;">
+                            Artistas
+                        </li>
+                    </div>
+    
+                    <div class="d-flex">
+                        <li class="list-group-item">
+                            <img src="../../assets/handshake.png" alt="" srcset="" style="width: 25px; height: 25px;">
+                            Apoio
+                        </li>
+                    </div>
+    
+                    <div class="d-flex">
+                        <li class="list-group-item">
+                            <img src="../../assets/group.png" alt="" srcset="" style="width: 25px; height: 25px;">
+                            <a routerLink='/quem-somos'>Quem Somos</a>
+                        </li>
+                    </div>
+                    <div class="d-flex">
+                        <li class="list-group-item">
+                            <img src="../../assets/info.png" alt="" srcset="" style="width: 25px; height: 25px;">
+                            <a routerLink='/sobre'>Sobre</a>
+                        </li>
+                    </div>
+                    <div class="d-flex">
+                        <li class="list-group-item mt-5">
+                            <img src="../../assets/playlist.png" alt="" srcset="" style="width: 25px; height: 25px;">
+                            Playlist
+                        </li>
+                    </div>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
+    </div>
+
+</ng-sidebar-container>
