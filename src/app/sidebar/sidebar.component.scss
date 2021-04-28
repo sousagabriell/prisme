@@ -1,6 +1,74 @@
- .cont{
-    max-width: 1200px;
- }
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+
+label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: #707070;
+    transition: 0.4s ease-in-out;
+}
+
+label span:nth-child(1){
+    top:0
+}
+label span:nth-child(2){
+    top:8px
+}
+label span:nth-child(3){
+    top:16px
+}
+
+#checkbox-menu:checked + label span:nth-child(1){
+    transform:rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3){
+    transform:rotate(45deg);
+    top: 8px;
+}
+
+.menu-hamburguer{
+    width: 100%;
+    height: 10vh;
+    z-index: 1;
+    background: white;
+    border-bottom: 2px solid #000;
+    top: 0;
+    display: none !important;
+    align-items: center;
+    padding: 0 7%;
+}
+
+.pesquisa-bar{
+    width: 100%;
+    background-color: #dcdcdc;
+    height: 5vh;
+}
+.icon-nav label{
+    margin-right: 4% ;
+}
+.dropdown-menu{
+    width: 20em;
+    padding: 10px;
+}
+
  li{
     border:none
  }
@@ -12,24 +80,46 @@
      position: fixed;
      height: 100vh;
      width: 20em;
-     background-color: white;
+     background-color: #071125;
      margin-top: -3em;
+     z-index: 9;
  }
 
 ng-sidebar-container{
     height: 100vh !important;
-    position: fixed;
-    overflow: auto;
-    
+    position: absolute;
+ 
 }
 ::ng-deep .ng-sidebar{
     background-color: #fff;
     width: 20em;
+    border-right: 2px solid #000;
+    height: 100%;
+    border-radius: 10px;
 }
 
-@media (max-width: 990px){
+@media (max-width: 1111px){
+    .navigator{
+        width: 17em;
+    }
+}
+
+
+@media (max-width: 896px){
+    .navigator{
+        width: 13em;
+    }
+}
+@media (max-width: 769px){
+    .menu-hamburguer{
+        display: flex !important;
+        justify-content: space-between;
+    }
     .navigator{
         display: none;
-
+    }
+    ng-sidebar-container{
+        position: absolute;
+        overflow: hidden;
     }
 }

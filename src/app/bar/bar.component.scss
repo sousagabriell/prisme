@@ -1,6 +1,18 @@
-@import url('../../styles.scss');
-
+button{
+    z-index: 9;
+}
 .cont{
-    max-width: 100%;
+    width: 100%;
     border-bottom: 2px solid #000000;
+    background-color: #071125;
+}
+.bar{
+    background-color: white;
+    border: 2px solid #000;
+}
+
+@media (max-width: 769px){
+    .cont{
+        display: none;
+    }
 }
