@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+h4{
+    font-family: 'Paytone One';
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.externa{
+    background-color: #ff006f;
+    width: 20%;
+    height: 5vh;
+}
+
+.noticias{
+    margin-top: 3%;
+}
+.noticia{
+    background-color: #071125;
+    margin-top: 6%;
+    padding: 1% 4% 2%;
+}
+.container{
+    position: sticky;
+}
+.fim{
+    height: 20%;
+    margin-top: 200px;
+}
+
+hr{
+    background-color: #fff;
+    height: 3px;
+}
+.icons{
+    height: 90%;
+    background-color: #071125;
+}
+
+@media(max-width:991px){
+    .materia{
+        display: block !important;
+    }
+    .externa{
+        height: 8vh;
+    }
+}
+@media(max-width:769px){
+    .noticia{
+        margin-top: 20%;
+    }
+}

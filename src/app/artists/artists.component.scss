@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .container{
     position: sticky;
 }
@@ -7,4 +10,18 @@
 }
 .artists{
     cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.card-img-top{
+    height: 22vh;
+    width: 18vw;
+}
+.espaço{
+    margin-top: 5%;
+}
+h5{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    opacity: 0.9;
 }

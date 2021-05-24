@@ -14,20 +14,20 @@ export class PlayerComponent implements OnInit {
  
   audioList = [
     {
-      url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-      title: "Smaple 1",
-      cover: "https://i1.sndcdn.com/artworks-000249294066-uow7s0-t500x500.jpg",
+      url: "../../assets/musics/mp3/Linhas Riquíssimas_70k.mp3",
+      title: "Rico Dalasam - Linhas Riquíssimas feat. Glória Groove",
+      cover: "../../assets/musics/cover/linhas-riquissimas.jpg",
       widht:'100%'
     },
     {
-      url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3",
-      title: "Sample 2",
-      cover: "https://i1.sndcdn.com/artworks-000249294066-uow7s0-t500x500.jpg"
+      url: "../../assets/musics/mp3/Quebrada Queer - Guigo Murillo Zyess Harlley Lucas Boombeat Tchelo Gomez_50k.mp3",
+      title: "Quebrada Queer - Guigo | Murillo Zyess | Harlley | Boombeat | Tchelo Gomez",
+      cover: "../../assets/musics/cover/quebrada-querr.jpg"
     },
     {
-      url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3",
-      title: "Sample 3",
-      cover: "https://i1.sndcdn.com/artworks-000249294066-uow7s0-t500x500.jpg"
+      url: "../../assets/musics/mp3/linn-da-quebrada-bixa-preta.mp3",
+      title: "Linn da Quebrada - Bixa Preta",
+      cover: "../../assets/musics/cover/linn-da-quebrada.jpg"
     }
   ];
 

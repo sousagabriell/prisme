@@ -1,30 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 .container{
     position: sticky;
 }
+
+h5{
+    color: #fff;
+}
+p{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.9;
+}
 .capa{
     width: 100%;
-    height: 30vh;
-    background-image: url('../../../assets/artists/cover/rico-dalasam.jpeg');
+    height: 50vh;
+    background-image: url('../../../assets/artists/cover/Rico-Dalassam.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-radius: 5px;
+}
+.gradiente-capa{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(transparent, #0f1d38c7);
 }
 .profile{
-    margin-left: 3em;
-}
-.profile > img{
-  width: 22%;
-   border-radius: 50%;
-   margin-top: 12vh;
+    margin-left: 2em;
+    width: 120%;
 }
 .profile h3{
-    margin-top: 21vh;
-    margin-left: 0.8em;
+    margin-top: 40vh;
 }
 .like{
-    margin-left: 2%;
-    margin-top: 22vh;
+    margin-top: 41vh;
     width: 2em;
     background-image: url('../../../assets/e-commerce-like-heart.png');
     background-repeat: no-repeat;
@@ -39,15 +50,13 @@
 }
 .biografia{
     width: 50%;
-    height: 40vh;
-    border: 2px solid #000;
+    height: 50%;
     background-color: #071125;
     margin-right: 2%;
     border-radius: 5px;
 }
 .lançamentos{
     width: 50%;
-    border: 2px solid #000;
     border-radius: 5px;
     background-color: #071125;
 }
@@ -73,5 +82,13 @@
     }
     .profile img{
         margin-top: 20vh;
+    }
+}
+
+
+@media (max-width: 768px){
+    .profile{
+        margin-left: 2em;
+        width: 90%;
     }
 }

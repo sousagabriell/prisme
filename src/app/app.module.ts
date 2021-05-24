@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { NewsComponent } from './news/news.component';
 import { ArtistsComponent } from './artists/artists.component';
 import { DalasamComponent } from './singers/dalasam/dalasam.component';
+import { NoticiesComponent } from './noticies/noticies.component';
 
 
 
@@ -33,7 +34,8 @@ import { DalasamComponent } from './singers/dalasam/dalasam.component';
     WhoComponent,
     NewsComponent,
     ArtistsComponent,
-    DalasamComponent
+    DalasamComponent,
+    NoticiesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,15 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+input{
+    background-color: #071125;
+    border: none;
+    color: white;
+}
+input:focus{
+    background-color: #0F1D38;
+    border: none;
+    color: white;
+    box-shadow: none;
+}
+::-webkit-input-placeholder {
+    color:rgba(255, 255, 255, 0.8);
+    font-family: 'Poppins', sans-serif;
+ }
+
 button{
     z-index: 9;
 }
 .cont{
     width: 100%;
-    border-bottom: 2px solid #000000;
     background-color: #071125;
+    position: fixed;
+    z-index: 8;
 }
-.bar{
-    background-color: white;
-    border: 2px solid #000;
+
+.btn-login{
+    color: white;
+    opacity: 0.8;
+    height: 2px;
 }
+.btn-login::after{
+    content: '....';
+    color:transparent;
+    background-image: url('../../assets/icons/Seta.png');
+    background-position: center;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+}
+
 
 @media (max-width: 769px){
     .cont{

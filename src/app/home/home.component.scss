@@ -1,17 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
 .coluna{
     background-color: transparent !important;
     z-index: -99999;
 }
+a{
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+a::after{
+    content: ">";
+    margin-left: 7px;
+}
+p,th,td{
+  font-family: 'Poppins', sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+}
 
 h5{
     font-family: 'Paytone One';
     color: #fff;
 }
+.space{
+  margin-top: 4%;
+}
 .espaço{
-    margin-top: 10%;
+    margin-top: 15%;
 }
 .container{
     position: sticky;
@@ -99,15 +117,17 @@ h5{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 400ms ease;
+    transition: transform 0.7s ease;
   }
   
   #slide1 {
-    background: tomato;
+    background-image:url('../../assets/carrossel/gloria 1.jpg');
+    background-size:cover;
   }
   
   #slide2 {
-    background: yellowgreen;
+    background-image:url('../../assets/carrossel/muri 2.jpg');
+    background-size:cover;
   }
   
   #slide3 {
