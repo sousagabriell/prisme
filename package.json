@@ -7,7 +7,9 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot --prod"
+
   },
   "engines": {
     "node": "14.16.0",
@@ -27,6 +29,7 @@
     "@smart-webcomponents-angular/carousel": "^9.2.73",
     "ang-music-player": "^0.0.4",
     "bootstrap": "^5.0.0-beta3",
+    "express": "^4.17.1",
     "jquery": "^3.6.0",
     "ng-sidebar": "^9.4.2",
     "ngx-swiper-wrapper": "^10.0.0",
